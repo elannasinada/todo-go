@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Todo List</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRUD Example</title>
+<style>
+  /* Basic CSS for styling */
+  body { font-family: Arial, sans-serif; }
+  #item-list { list-style-type: none; padding: 0; }
+  .item { margin-bottom: 5px; }
+  .btn { cursor: pointer; }
+</style>
 </head>
 <body>
-    <h1>Todo List</h1>
-    <ul>
-        <li>Task 1</li>
-        <li>Task 2</li>
-        <li>Task 3</li>
-    </ul>
+
+<h2>CRUD Example</h2>
+
+<!-- Form for adding new items -->
+<form id="add-item-form">
+  <input type="text" id="new-item-input" placeholder="Enter item">
+  <button type="submit">Add Item</button>
+</form>
+
+<!-- List to display items -->
+<ul id="item-list"></ul>
+
+<script src="script.js"></script>
 </body>
 </html>
